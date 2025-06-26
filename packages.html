@@ -1,0 +1,56 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family-Caveat&display-swap" rel="stylesheet">
+
+<link rel="stylesheet" href="navbar.css" />
+<link rel="stylesheet" href="packagesstyle.css" />
+<script src="animation.js"></script>
+
+<title> GoPerhentian | Packages </title>
+<link rel="shortcut icon" href="images/icongo.png"/>
+</head>
+
+<body>
+
+<div class="navcontainer">
+    <a href="index.html"> <img src="images/icongo.png"> </a> 
+    <div>   
+        <a href="index.html"> Home </a>
+        <a href="#div2"> Activities </a>
+        <a href="#div2"> Packages </a>
+        <a href="#div2"> Getting Here </a>
+        <a href="gallery.html"> Gallery </a>
+        <a href="index.html#div7"> Contact us </a>
+    </div> 
+</div>
+
+
+<!-- <div class="popupcontainer">
+    <span>&times;</span>
+    <img src="images/divingturtle.png" class="popup">
+</div> -->
+
+<footer>
+    <p style="text-align: center;"> Copyrights © 2024 GoPerhentian. All rights reserved. Developed by <img src="images/8.png" alt="group8" style="height: 40%; width: auto; position: relative ; top: 10px;"></p>
+</footer>
+<script>
+    document.querySelectorAll(".div2 figure").forEach(figure => {
+        figure.onclick = () => {
+            const img = figure.querySelector("img");
+            if (img) {
+                document.querySelector(".popupcontainer").style.visibility = 'visible';
+                document.querySelector(".popupcontainer").style.opacity = 1;
+                document.querySelector(".popupcontainer img").src = img.getAttribute('src');
+            }
+        };
+    });
+
+    document.querySelector(".popupcontainer span").onclick = () => {
+        document.querySelector(".popupcontainer").style.opacity = 0;
+        document.querySelector(".popupcontainer").style.visibility = 'hidden';
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+.div1 {
+    background-image: url("images/homepulau.png");
+    background-size: cover;
+    position: relative;
+    bottom:0;
+    margin-top: -90px;
+    padding-top: 90px;
+    z-index: 1;
+}
+.div1:after {
+    content:"";
+    background: linear-gradient(to bottom, rgb(175,203,214,0), #337974);
+    position:absolute;
+    height:40vh;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+
+}
+
+.div1 .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 80%;
+    margin-left:5%;
+    position: relative;
+    bottom: 30px;
+    justify-content: center;
+    z-index: 5;
+    animation: 1.5s fadein ease;
+}
+
+@keyframes fadein{
+    from{
+        position: relative;
+        bottom: 30px;
+        right:500px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        bottom: 30px;
+        right: 0px;
+        opacity: 1px;
+    }
+}
+
+.div2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    position:relative;
+    background-color: #337974;
+}
+.div2 .container1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 15%; margin-right: 10%;
+    justify-content: center;
+    z-index: 5;
+    
+}
+.div2 .container1:after{
+    content: '';
+    position: absolute;
+    top: 28%; left: 12%;
+    width: 70%;
+    height: 4px;
+    background-color: #eeeacc;
+    border-radius: 1px;
+    
+}
+
+
+.div2 .container2{
+    border: 5px solid white;
+    background-image: url('images/divingturtle.png');
+    background-size: cover;
+    margin: 10%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.div2 .container2:after{
+    content:'';
+    border-radius: 100%;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.div3{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position:relative;
+    background-color: #1b5574;
+}
+
+.div3 .container1{
+    border: 5px solid white;
+    background-image: url('images/perhentian-view-1.png');
+    background-size: cover;
+    margin: 10%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+}
+.div3 .container1:after{
+    content:'';
+    border-radius: 100%;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+}
+.div3 .container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 15%; margin-left: 10%;
+    justify-content: center;
+    z-index: 5;
+}
+.div3 .container2 p{
+    text-align: justify;
+}
+
+.div3 .container2:after{
+    content: '';
+    position: absolute;
+    top: 20%; left: 12%;
+    width: 70%;
+    height: 4px;
+    background-color: #eeeacc;
+    border-radius: 1px;
+    
+}
+
+.div5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    gap: 20px;
+    align-items: center;
+    gap: 40px;
+    justify-items: center;
+    background-color: #ffffff;
+    grid-template-rows: auto 1fr;
+    background-image: url("images/sand.png");  
+    background-size: cover;
+    backdrop-filter: blur(80px);
+
+}   
+.div5 .title{
+    grid-column: 1/-1;
+    text-align:center;
+    
+}
+
+
+.div5 .container1, .div5 .container2, .div5 .container3{
+    margin-top: -200px;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 127, 34);
+    border-radius: 5px;
+    width: 70%;
+    transition: all 0.5s ease;
+
+
+}
+.div5 .container1:hover, .div5 .container2:hover, .div5 .container3:hover{
+    transform: scale(1.03);
+    transition: all 0.5 ease;
+
+
+
+}
+
+
+.div5 .container1 img, .div5 .container2 img, .div5 .container3 img{
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    flex: 8;
+    margin: 0;
+
+}
+.div5 .container1 h1, .div5 .container2 h1, .div5 .container3 h1{
+    font-size: 30px;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+
+
+}
+.div5 .container1 p, .div5 .container2 p, .div5 .container3 p{
+    font-size: 17px;
+    color: white;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    width: 80%;
+
+}
+.div5 button{
+    align-self: center;
+    position: absolute;
+    bottom: 5%;
+}
+
+.div6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(8, 48, 128);
+}
+.div6 h1{
+    animation: viewappear;
+    animation-timeline: view();
+    font-size: 100px;
+    line-height: 0.2;
+}
+
+@keyframes viewappear{
+    from {
+        filter: blur(50px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    to {
+        filter: blur(50px);
+    }
+        
+}
+
+.div6 .container h2, .div6 .container p{
+    text-align: center;
+}
+
+.div6 .container h2{
+
+    font-size: 80px;
+    color: white;
+
+}
+.div7{
+    background-color: rgb(8, 48, 128);
+    margin-top: -60px;
+}
+
+.div7 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div7 .container div{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+.div7 .container div p{
+    margin: 0;
+
+}
+
+
+.div2 .container1 .overline:after{
+    content: '';
+    background-color: navy;
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+
+
+
+
+
+
+
+.div1, .div2, .div3 {
+    overflow-x: hidden;
+}
+
+
+

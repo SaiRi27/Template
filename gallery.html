@@ -1,0 +1,106 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family-Caveat&display-swap" rel="stylesheet">
+
+<link rel="stylesheet" href="navbar.css" />
+<link rel="stylesheet" href="gallery.css" />
+<script src="animation.js"></script>
+
+<title> GoPerhentian | Gallery </title>
+<link rel="shortcut icon" href="images/icongo.png"/>
+</head>
+
+<body>
+
+<div class="navcontainer">
+    <a href="index.html"> <img src="images/icongo.png"> </a> 
+    <div>   
+        <a href="index.html"> Home </a>
+        <a href="#div2"> Activities </a>
+        <a href="packages.html"> Packages </a>
+        <a href="#div2"> Getting Here </a>
+        <a href="gallery.html"> Gallery </a>
+        <a href="index.html#div7"> Contact us </a>
+    </div> 
+</div>
+
+<div class="div1 division2">
+    <div class="img">
+    </div>
+    <div class="title">
+        <h1> Gallery </h1>
+        <p style="color:white;"> Fascinating picture with our client</p>
+    </div>
+
+</div>
+<div class="div2">
+    <div class="title"> 
+        <h1 style="font-size: 50px;"> Featured Attraction </h1>
+    </div>
+    <figure>
+        <img src="images/gal1.png">
+    </figure>
+    <figure>
+        <img src="images/gal2.png">
+    </figure>
+    <figure>
+        <img src="images/gal3.png">
+    </figure>
+    <figure>
+        <img src="images/gal4.png">
+    </figure>
+    <figure>
+        <img src="images/gal5.png">
+    </figure>
+    <figure>
+        <img src="images/gal6.png">
+    </figure>
+    <figure>
+        <img src="images/mrjid.png">
+    </figure>
+    <figure>
+        <img src="images/gal8.png">
+    </figure>
+    <figure>
+        <img src="images/gal9.png">
+    </figure>
+    <figure>
+        <img src="images/gal10.png">
+    </figure>
+    <figure>
+        <img src="images/gal11.png">
+    </figure>
+    <figure>
+        <img src="images/gal12.png">
+    </figure>
+</div>
+
+<div class="popupcontainer">
+    <span>&times;</span>
+    <img src="images/divingturtle.png" class="popup">
+</div>
+
+<footer>
+    <p style="text-align: center;"> Copyrights © 2024 GoPerhentian. All rights reserved. Developed by <img src="images/8.png" alt="group8" style="height: 40%; width: auto; position: relative ; top: 10px;"></p>
+</footer>
+<script>
+    document.querySelectorAll(".div2 figure").forEach(figure => {
+        figure.onclick = () => {
+            const img = figure.querySelector("img");
+            if (img) {
+                document.querySelector(".popupcontainer").style.visibility = 'visible';
+                document.querySelector(".popupcontainer").style.opacity = 1;
+                document.querySelector(".popupcontainer img").src = img.getAttribute('src');
+            }
+        };
+    });
+
+    document.querySelector(".popupcontainer span").onclick = () => {
+        document.querySelector(".popupcontainer").style.opacity = 0;
+        document.querySelector(".popupcontainer").style.visibility = 'hidden';
+    };
+</script>
+</body>
+</html>
